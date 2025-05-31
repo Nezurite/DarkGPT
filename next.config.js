@@ -1,10 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // NO NEED FOR EXPERIMENTAL SHIT IN PROD
-  output: 'standalone', // BEST FOR VERCEL
-  images: {
-    domains: ['replicate.com'],
-  },
+  output: 'standalone',
+  images: { domains: ['replicate.com'] },
+  experimental: {
+    serverActions: true,
+    optimizePackageImports: ['replicate']  # SPEED BOOST
+  }
 }
-
 module.exports = nextConfig
