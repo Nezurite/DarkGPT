@@ -1,10 +1,10 @@
 [build]
   command = "npm run build"
-  publish = ".next"
-  functions = "app/api"  
+  publish = "out" 
+  functions = "functions" 
 
 [build.environment]
-  NODE_VERSION = "20"   
+  NODE_VERSION = "20"  
 
 [[redirects]]
   from = "/*"
