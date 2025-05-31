@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'standalone',
+  output: 'standalone',  # NETLIFY NEEDS THIS
   images: {
     domains: ['replicate.com'],
   },
