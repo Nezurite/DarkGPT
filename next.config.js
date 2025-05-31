@@ -1,8 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'standalone',  # NETLIFY NEEDS THIS
+  output: 'export', // NETLIFY WORKS BETTER WITH THIS
   images: {
-    domains: ['replicate.com'],
+    unoptimized: true, // DISABLE IMAGE OPTIMIZATION (NETLIFY HATES IT)
   },
 }
 
