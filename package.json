@@ -1,17 +1,19 @@
 {
-  "name": "darkgpt-vercel",
+  "name": "darkgpt-netlify",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "postinstall": "npm audit fix --force"
+    "netlify-build": "npm install --legacy-peer-deps --force && npm run build"
   },
   "dependencies": {
     "next": "^14.1.0",  
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "replicate": "^0.25.0",
-    "sharp": "^0.33.2"  
+    "replicate": "^0.25.0"
+  },
+  "engines": {
+    "node": ">=20.0.0" 
   }
 }
