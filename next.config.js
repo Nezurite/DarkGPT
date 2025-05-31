@@ -1,10 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  experimental: {
-    serverActions: true, // FOR FASTER API CALLS
-  },
+  // NO NEED FOR EXPERIMENTAL SHIT IN PROD
+  output: 'standalone', // BEST FOR VERCEL
   images: {
-    domains: ['replicate.com'], // IF YOU ADD AI-GENERATED IMGS LATER
+    domains: ['replicate.com'],
   },
 }
 
