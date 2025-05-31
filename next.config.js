@@ -1,8 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export', // NETLIFY WORKS BETTER WITH THIS
+  output: 'export', 
   images: {
-    unoptimized: true, // DISABLE IMAGE OPTIMIZATION (NETLIFY HATES IT)
+    unoptimized: true, 
   },
 }
 
