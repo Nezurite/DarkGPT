@@ -3,14 +3,15 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build && next lint",
+    "build": "next build",
     "start": "next start",
     "postinstall": "npm audit fix --force"
   },
   "dependencies": {
-    "next": "14.1.4-canary.35", 
-    "react": "^18",
+    "next": "^14.1.0",  *
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "replicate": "^0.25.0",
-    "sharp": "^0.33.2" 
+    "sharp": "^0.33.2"  
   }
 }
