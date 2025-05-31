@@ -8,9 +8,9 @@
     "postinstall": "npm audit fix --force"
   },
   "dependencies": {
-    "next": "14.1.4-canary.35",  # STABLE EDGE
+    "next": "14.1.4-canary.35", 
     "react": "^18",
     "replicate": "^0.25.0",
-    "sharp": "^0.33.2"  # IMAGE OPTIMIZATION
+    "sharp": "^0.33.2" 
   }
 }
